@@ -1,0 +1,60 @@
+.weather-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    align-items: center;
+    padding: 2rem;
+    height:auto;
+    background: transparent; 
+  }
+  
+  .weather-card {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  
+  
+  
+  .today-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .weather-icon-main {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .today-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+  }
+  
+  .today-info p {
+    font-size: 1.2em;
+  }
+  
+  .forecast-section {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .weather-day {
+    text-align: center;
+  }
+  
+  .weather-icon {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    margin-bottom: 5px;
+  }
+
+  
+  
