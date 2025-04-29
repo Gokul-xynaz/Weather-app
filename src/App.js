@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Search from './components/Searchbar/Search';
 import Weather from './components/WeatherDisplay/Weather';
 
+
 function App() {
   const [city, setCity] = useState('New York'); 
 

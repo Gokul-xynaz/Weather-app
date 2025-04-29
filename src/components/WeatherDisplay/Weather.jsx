@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Weather.css";
+import getBackgroundImage from '../../../src/utility/getBackroundImage.js';
+
+
 
 const API_KEY = "ce5a031ad4e40ee48d50e2fc43b454e7";
 
@@ -35,8 +38,18 @@ function WeatherComponent({ city }) {
     }
   };
 
+  const backgroundImage = getBackgroundImage(weatherData?.condition || "default");
   return (
-    <div className="weather-container">
+    <div
+    className="weather-container"
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      minHeight: "100vh",
+    }}
+  >
       <div className="weather-card">
         {weatherData ? (
           <div className="today-section">
@@ -76,5 +89,8 @@ function WeatherDay({ day, temperature, icon }) {
     </div>
   );
 }
+
+
+
 
 export default WeatherComponent;
